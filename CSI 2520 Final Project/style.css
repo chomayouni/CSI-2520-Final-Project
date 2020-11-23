@@ -10,6 +10,7 @@ header{
  
 }
 
+/*This sets the style of the text for the website*/
 li,a,button{
     font-family:"Montserrat", sans-serif;
     font-weight: 500;
@@ -49,6 +50,39 @@ header{
     color: #0088a9;
 }
 
+.nav_Links ul ul{
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.nav_Links ul li{
+    float:left;   
+}
+
+.nav_Links li:hover >ul{display: block}
+
+.subMenu{
+    position: relative;
+    display: none;
+}
+
+.subMenu li{
+    clear:both;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li:hover{
+    color: orange;
+}
+
+.aside{
+    margin: 15px;
+    float:right;
+}
+
+/*this is the button that will bring up the an email window*/
 button{
     padding: 9px 25px;
     background-color: #0088a9;
@@ -82,21 +116,6 @@ body{
     z-index: 10;     
 }
 
-/*
-.one::after{
-    position: relative;
-    content: '';
-    width: 200px;
-    height: 470px;
-    background: blue;
-    bottom:  -1em;
-    z-index: 100;
-    left: ce;
-    transform: skewX(0,-20deg)
-}
-*/
-
-
 
 .two{
     display: flex;
@@ -116,6 +135,7 @@ body{
 }
 
 .hp{
+    float:left;
     display: flex;
     clip-path: polygon(0 0, 73% 0, 59% 100%, 0% 100%);
 }
