@@ -7,7 +7,10 @@ header{
     margin:0;
     padding:0;
     background-color:#252525;
- 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10%;
 }
 
 /*This sets the style of the text for the website*/
@@ -20,14 +23,7 @@ li,a,button{
     
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 30px 10%;
-    
-}
-
+/*This is all the CSS for the menus at the top of each page*/
 .logo{
     cursor: pointer;
 }
@@ -51,7 +47,7 @@ header{
 }
 
 .nav_Links ul ul{
-    position: absolute;
+    position:relative;
     top: 100%;
     display: none;
 }
@@ -60,15 +56,23 @@ header{
     float:left;   
 }
 
-.nav_Links li:hover >ul{display: block}
+.nav_Links li:hover >ul{
+    display: block
+}
 
-.subMenu{
+/*
+.nav_Links li:hover>a{
+    color: 
+}
+*/
+/* the menu is currently there but won't display when hovered over*/
+#subMenu{
     position: relative;
     display: none;
 }
 
-.subMenu li{
-    clear:both;
+#subMenu li{
+    clear: both;
     padding-left: 0;
     margin-left: 0;
 }
@@ -97,32 +101,44 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
+/* I have Sans-serif listred as a backup font just in case the Montserrat doesn't load*/
 body{
     background-color:#e9e9e9;
     font-family: "Montserrat", sans-serif;
 }
 
+/*This makes all the pictures on the homepage of the same width*/
 .homeBtn{
     width: 25em
 }
 
-
+/*This is the CSS for the main title division of the homepage*/
 .one{
     display: flex;
+    flex: 0 1 300px;
     place-items:center;
     background:#ff8c40; 
     margin:0;
     padding:0;
-    position: relative;
+    position: static;
     z-index: 10;     
 }
 
+#Introduction{
+    height: 500px
+    float: right;
+    display:flex;
+    position: static;
+}
 
+/*This CSS organizes the category buttons on the homepage*/
+/*The display being set the flex makes it so that the webpage can be stretched, and the buttons will stretch with it. great for mobile use.*/
 .two{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 .box{
     flex: 1 1 200px;
@@ -135,10 +151,11 @@ body{
     
 }
 
+
 .hp{
     float:left;
     display: flex;
-    clip-path: polygon(0 0, 73% 0, 59% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);*/
 }
 
 footer{
@@ -149,9 +166,33 @@ footer{
     text-align: center;
 }
 
+
+/*Thiis is the style for the Classic Cars web page*/
+#ccHeader{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid
+}
+.Classics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.CCbox{
+    flex: 0 1 150px;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #252525;
+    border: 5px solid #;
+    background: #ff8c40;
+}
+
+
 /*This is the formatting in CSS for the profiles on the about page*/
 
 #abtHeader{
+    
     text-align: center;
     margin: 5px;
     padding: 10px;
@@ -177,7 +218,7 @@ footer{
 }
 
 aside {
-    border: 1px solid grey;
+    border: 5px solid grey;
     width: 700px;
     float: right;
     padding: 10px;
