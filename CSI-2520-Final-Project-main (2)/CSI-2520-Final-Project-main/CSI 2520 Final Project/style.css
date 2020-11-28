@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{margin:0; padding:0;}
+
+header{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color:#252525;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10%;
+}
+
+/*This sets the style of the text for the website*/
+li,a,button{
+    font-family:"Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+
+/*This is all the CSS for the menus at the top of each page*/
+.logo{
+    cursor: pointer;
+}
+
+.nav_Links{
+    list-style: none;
+}
+
+.nav_Links li {
+    display: inline-block;
+    padding 20px 20px;
+    
+}
+
+.nav_Links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_Links li a:hover{
+    color: #0088a9;
+}
+
+.nav_Links ul ul{
+    position:relative;
+    top: 100%;
+    display: none;
+}
+
+.nav_Links:hover #subMenu{
+    display: block;
+}
+
+.nav_Links ul li{
+    float:left;   
+}
+
+.nav_Links li:hover >ul{
+    display: block
+}
+
+/*
+.nav_Links li:hover>a{
+    color: 
+}
+*/
+/* the menu is currently there but won't display when hovered over*/
+#subMenu{
+    position: relative;
+    display: none;
+}
+
+#subMenu li{
+    clear: both;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li:hover{
+    color: orange;
+}
+
+/*I'm having some issues with the the text not floating to the other side properly.*/
+.aside{
+    margin: 15px;
+    float:right;
+}
+
+/*this is the button that will bring up the an email window*/
+button{
+    padding: 9px 25px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;      
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+/* I have Sans-serif listred as a backup font just in case the Montserrat doesn't load*/
+body{
+    background-color:#e9e9e9;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*This makes all the pictures on the homepage of the same width*/
+.homeBtn{
+    width: 25em
+}
+
+/*This is the CSS for the main title division of the homepage*/
+.one{
+    display: flex;
+    flex: 0 1 300px;
+    place-items:center;
+    background:#ff8c40; 
+    margin:0;
+    padding:0;
+    position: static;
+    z-index: 10;     
+}
+
+#Introduction{
+    height: 500px
+    float: right;
+    display:flex;
+    position: static;
+}
+
+/*This CSS organizes the category buttons on the homepage*/
+/*The display being set the flex makes it so that the webpage can be stretched, and the buttons will stretch with it. great for mobile use.*/
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.box{
+    flex: 1 1 200px;
+/*    flex: 0 1 200px;*/
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #ff8c40;
+    text-align: center;
+    background: #252525;
+    
+}
+
+
+.hp{
+    float:left;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);*/
+}
+
+footer{
+    background-color:#252525;
+    margin:0;
+    padding:5px;
+    color: white;
+    text-align: center;
+}
+
+
+/*Thiis is the style for the Classic Cars web page*/
+#ccHeader{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid
+}
+.Classics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.CCbox{
+    flex: 0 1 150px;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #252525;
+    border: 5px solid #;
+    background: #ff8c40;
+}
+
+
+/*This is the formatting in CSS for the profiles on the about page*/
+
+#abtHeader{
+    
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Profiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Profiles img{
+    width: 200px
+}
+
+.pfBox{
+    flex: 1 1 2000px;
+/*    flex: 0 1 200px;*/
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #ff8c40;
+
+    background: #252525;
+}
+
+aside {
+    border: 5px solid grey;
+    width: 700px;
+    float: right;
+    padding: 10px;
+    margin: 0 20px 20px;
+}
+
+/* This is the style for table at the bottom of the about. */
+table{
+    font-size: 20px;
+    margin-left:200 border-collapse: collapse;
+    text-align: center;
+    }
+
+    td {
+        width: 2100px;
+    }
+
+    th {
+        background-color: #ff8c40;
+    }
+
+/*Adam/ This is the style of Supercars and Vintage 4x4*/
+/*Sets background color for both bodys of the supercars and vintage html pages*/
+.sc {
+    background-color: orange;
+}
+
+.v4 {
+    background-color: cadetblue;
+}
+/*Headers h1 text is aligned center and increased the font size*/
+.h1s {
+    text-align: center;
+    font-size: 500%;
+    
+}
+/*The images have a border around them, padding, margin-left, and a box shadow*/
+.img1 {
+    border: 3px solid grey;
+    padding: 5px;
+    margin-left: 600px;
+    width: 300px;
+    border-radius: 50px;
+    border-radius: 10px 20px 0 20px;
+    box-shadow: 3px 3px 4px 4px red;
+}
+/*Paragraph has 2 margins and a set font size*/
+.p1 {
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 150%;
+}
+/*The paragraph class specs is given a border, padding, centering text, creating a margin at the bottom, and setting a font size*/
+.specs {
+    border: 5px solid;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 120%;
+}
+/*Header 3 specs is given special font size*/
+.hspecs {
+    text-align: center;
+    font-size: 200%;
+}
+/*If p is a parent of a then the color changes blue, text aligns center, and adds an underline to the link*/
+.p1 > a {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+/*If the paragraph class specs are a parent of a then the color changes to blue, text aligns center, and adds an underline to the link*/
+.specs > a {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+/*In the header h3 class the margins are given a margin-left and the font is set */
+.h3s {
+    margin-left: 50px;
+    font-size: 170%;
+}
+
+/* This is the beginnig of David's CSS*/
+/*Centers the main image and adds a border style*/
+#jdm1P{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+    border: 2px solid black;
+    
+    
+}
+/*Center aligns the text*/
+#infosection{
+    text-align: center;
+}
+
+figure{
+    
+}
+/*Adds a margin all around the videos*/
+#video1,#video2{
+
+    margin: 5px;
+    
+}
+iframe{
+    margin: 10px;
+    
+    
+}
+#title{
+text-align: center;
+/*       Center aligns the text on these two heading text          */
+    
+}                       
+#history{
+    text-align: center;
+}
+
+/*Adjust width and adds border style*/
+#AudiQ,#LanciaD{
+    border: 2px solid black;
+    width:30%;
+    
+    
+}
+
+.one{
+    display: flex;
+    place-items:center;
+    background:#ff8c40; 
+    margin:0;
+    padding:0;
+    position: relative;
+    z-index: 10;     
+}
+#historyT{
+    text-align: center;
+    
+}
+/*Center aligns the image and adjust the width*/
+#rally1P{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+    border: 2px solid black;
+    
+    
+}
+#infosection{
+    text-align: center;
+}
+#rallyGifs{
+    text-align: center;
+}
+
+figure{
+    
+}
+#gif1,#gif2,#gif3{
+
+    margin: 5px;
+    
+}
+
+
+
+#title{
+text-align: center;
+    
+}
+#history{
+    text-align: center;
+}
